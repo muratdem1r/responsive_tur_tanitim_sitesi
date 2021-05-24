@@ -1,0 +1,472 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+
+.navbar {
+    width: 100%;
+    background: #10375c;
+
+    padding: 0 !important;
+    box-shadow: 0px 6px 25px 2px #0B2640;
+}
+
+.nav-link {
+    text-align: center;
+    width: 130px;
+    font-size: 18px;
+    color: white;
+    padding: 20px !important;
+}
+
+.nav-link:hover {
+    color: gainsboro;
+}
+
+#galeri {
+    cursor: default;
+}
+
+.anasayfa {
+    font-size: 24px;
+}
+
+.navKamp {
+    width: 160px;
+}
+
+.active {
+    background-color: #0B2640 !important;
+}
+
+.active:hover {
+    color: white;
+}
+
+.sakli {
+    position: absolute;
+    z-index: 1;
+}
+
+.sakli a {
+    display: none;
+    background: #10375c;
+    border-radius: 10px;
+    width: 130px;
+    padding: 25px;
+    margin: 1px 0;
+    color: white;
+    text-align: center;
+    z-index: 1;
+}
+
+.sakli a:first-child {
+    margin-top: 7px;
+}
+
+.sakli a:hover {
+    color: gainsboro;
+    text-decoration: none;
+}
+
+.dropButton:hover .sakli a {
+    display: block;
+    animation: dropAnimasyon 350ms forwards;
+}
+
+@keyframes dropAnimasyon {
+    0% {
+        opacity: 0;
+        transform: rotateX(-90deg);
+    }
+
+    60% {
+        transform: rotateX(50deg);
+    }
+
+    100% {
+        opacity: 1;
+        transform: rotateX(0deg);
+    }
+}
+
+/* Main */
+.yola-cikiyoruz {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(../img/istanbul.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.gecisBolumu {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 10px 0px 0px 15px black;
+    margin: 20px 0;
+    overflow: hidden;
+}
+
+.gecisBolumu h3 {
+    font-family: 'Chelsea Market', cursive;
+    width: 40%;
+    color: black;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: 'Chelsea Market', cursive;
+    padding: 20px;
+    color: black;
+    position: absolute;
+    top: 20%;
+    left: 55%;
+}
+
+.geziYerleri {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+
+}
+
+.geziYerleri h2 {
+    font-family: 'Chelsea Market', cursive;
+    font-size: 70px;
+    padding: 20px;
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 3px 3px 25px 5px black;
+}
+
+.bolu {
+    background-image: url(../img/bolu.jpg);
+}
+
+.amasra {
+    background-image: url(../img/amasra.jpg);
+    background-position: bottom;
+
+}
+
+.kastamonu {
+    background-image: url(../img/kastamonu.jpg);
+    background-position: bottom;
+}
+
+
+
+
+/* Footer */
+
+footer {
+    width: 100%;
+    background: lightgray;
+    padding: 30px;
+    overflow: hidden;
+}
+
+footer a {
+    text-decoration: none;
+    color: cornflowerblue;
+}
+
+#slider {
+    width: 60%;
+    margin: 50px auto;
+}
+
+#slider img {
+    width: 100%;
+    max-height: 30vw;
+}
+
+.harita {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 110px;
+
+}
+
+.rotaMain {
+    padding: 60px;
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.yolculukRotasi {
+    color: black;
+    list-style: disc;
+    text-align: justify;
+    padding: 20px 30px;
+    font-size: 1.5rem;
+    border-bottom: 1px solid gray;
+    border-top: 1px solid gray;
+}
+
+iframe {
+    width: 60%;
+}
+
+.taniyalim {
+    width: 60%;
+    margin: auto;
+}
+
+.taniyalimBox {
+    width: 100%;
+    padding: 20px;
+}
+
+.taniyalimBox img {
+    width: 100%;
+}
+
+.taniyalimBox h3 {
+    background: lightgray;
+    text-align: center;
+    font-weight: bold;
+    padding: 7px;
+    margin-bottom: 13px;
+}
+
+.taniyalimBox p {
+    padding-top: 17px;
+}
+
+.taniyalimBox ol {
+    padding: 15px;
+}
+
+.galeri {
+    width: 80%;
+    margin: 50px auto;
+}
+
+.galeri .container {
+    display: inline-block;
+    height: 550px;
+    width: 33%;
+    padding: 5px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.galeri img {
+    width: 100%;
+    height: 100%;
+    transition: 350ms;
+}
+
+.galeri .container:hover img {
+    transform: scale(1.3);
+}
+
+.modal img {
+    width: 100%;
+    height: 500px;
+}
+
+.modalP {
+    font-weight: bold;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.galeriTitle {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.galeriTitle h3 {
+    padding: 20px 50px;
+    background: lightgray;
+    display: inline;
+    border-radius: 15px;
+}
+
+/* Responsive */
+@media screen and (min-width:1368px) and (max-width:1550px) {
+    .galeri .container {
+        height: 450px;
+    }
+}
+
+@media screen and (max-width:1500px) {
+    iframe {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:1368px) {
+    .gecisBolumu h3 {
+        width: 100% !important;
+    }
+
+    .galeri {
+        width: 100%;
+
+    }
+
+    .galeri .container {
+        width: 33%;
+    }
+}
+
+@media screen and (max-width:1200px) {
+
+    .galeri {
+        width: 80%;
+
+    }
+
+    .galeri .container {
+        width: 49%;
+    }
+}
+
+@media screen and (max-width:1050px) {
+
+    .galeri {
+        width: 100%;
+
+    }
+
+    iframe {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:850px) {
+    .galeri .container {
+        height: 450px;
+    }
+
+    .nav-link {
+        width: 100px;
+    }
+
+    .navKamp {
+        width: 160px;
+    }
+
+    .anasayfa {
+        width: 130px;
+    }
+}
+
+@media screen and (max-width:767px) {
+
+    .navbar-nav,
+    .nav-link {
+        width: 100%;
+    }
+
+    #galeri {
+        display: none;
+    }
+
+    .sakli {
+        position: static;
+    }
+
+    .sakli a {
+        display: block;
+        width: 100%;
+        border-radius: 0;
+        margin: 0;
+    }
+
+    .dropButton:hover .sakli a {
+        animation: none;
+    }
+
+    h1 {
+        left: 30%;
+    }
+
+    .anasayfa {
+        border-bottom: 1px solid black;
+    }
+
+    .taniyalim {
+        width: 100%;
+    }
+
+    .galeri {
+        width: 80%;
+        margin: 50px auto;
+    }
+
+    .galeri .container {
+        width: 100%;
+    }
+
+    iframe {
+        width: 100%;
+
+    }
+
+    .rotaMain {
+        padding: 60px 0;
+
+    }
+
+    .rotaMain li,
+    .rotaMain h3 {
+        text-align: left;
+    }
+
+    #slider {
+        width: 100%;
+        margin: 20px auto;
+    }
+
+    #slider img {
+        width: 100%;
+        max-height: 58vw;
+    }
+}
+
+@media screen and (max-width:500px) {
+    h1 {
+        left: 10%;
+        font-size: 30px !important;
+    }
+
+    .geziYerleri h2 {
+        font-size: 40px;
+    }
+
+    .galeri {
+        width: 100%;
+
+    }
+
+    .galeri .container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:350px) {
+
+    .galeri .container {
+        height: 250px;
+    }
+}

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Kamp Turu</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md justify-content-between">
+
+        <a class="nav-link anasayfa" href="index.html">Anasayfa</a>
+
+        <ul class="navbar-nav">
+
+            <li class="nav-item dropButton">
+                <a id="galeri" class="nav-link active" href="#">Galeri
+
+                </a>
+                <div class="sakli">
+                    <a href="bolu.html">Bolu</a>
+                    <a class="active" href="#">Amasra</a>
+                    <a href="kastamonu.html">Kastamonu</a>
+                </div>
+
+
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="taniyalim.html">Tanıyalım</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="rota.html">Rota</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link navKamp" href="kamp_alani.html">Kamp Alanımız</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link navKamp" href="" data-toggle="modal" data-target="#modalFiyat">Fiyat Bilgisi</a>
+            </li>
+
+        </ul>
+
+    </nav>
+    <main>
+        <div class="galeriTitle">
+            <h3>Amasra</h3>
+        </div>
+        <div class="galeri">
+            <div class="container">
+                <img src="img/amasra_galeri/kemerekoprusu.jpg" data-toggle="modal" data-target="#modalAmasra1">
+            </div>
+            <div class="container">
+                <img src="img/amasra_galeri/amasrakalesi.jpg" data-toggle="modal" data-target="#modalAmasra2">
+            </div>
+            <div class="container">
+                <img src="img/amasra_galeri/buyukliman.jpg" data-toggle="modal" data-target="#modalAmasra3">
+            </div>
+            <div class="container">
+                <img src="img/amasra_galeri/aglayanagac.png" data-toggle="modal" data-target="#modalAmasra4">
+            </div>
+            <div class="container">
+                <img src="img/amasra_galeri/kuskayasi.jpg" data-toggle="modal" data-target="#modalAmasra5">
+            </div>
+            <div class="container">
+                <img src="img/amasra_galeri/gergeceselalesi.jpg" data-toggle="modal" data-target="#modalAmasra6">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Tüm Hakları Saklıdır.</p>
+        <a href="mailto:dzcdemir@gmail.com">dzcdemir@gmail.com</a>
+    </footer>
+
+    <div class="modal" id="modalFiyat">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Fiyat Bilgisi</h4>
+                    <button type="button" class="close" data-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="card-text">Standart Fiyat: <strong style="color: red;">100TL</strong><br>Yemeklere Dahil Olmak İçin: +50TL<br><br>Konaklamak için çadır ve kamp malzemelerinden kişi kendi sorumludur. (Kamp yapmak istemeyip sadece bölgeyi gezmek isteyenler otobüsümüzde konaklayabilir.)</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Kapat</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modalAmasra1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="img/amasra_galeri/kemerekoprusu.jpg" alt="">
+
+                </div>
+                <div class="modal-footer">
+                    <p class="modalP">Amasra, Kemere Köprüsü</p>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Kapat</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modalAmasra2">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="img/amasra_galeri/amasrakalesi.jpg" alt="">
+
+                </div>
+                <div class="modal-footer">
+                    <p class="modalP">Amasra, Amasra Kalesi</p>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Kapat</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modalAmasra3">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="img/amasra_galeri/buyukliman.jpg" alt="">
+
+                </div>
+                <div class="modal-footer">
+                    <p class="modalP">Amasra, Büyük Liman Plajı</p>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Kapat</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modalAmasra4">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="img/amasra_galeri/aglayanagac.png" alt="">
+
+                </div>
+                <div class="modal-footer">
+                    <p class="modalP">Amasra, Ağlayan Ağaç</p>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Kapat</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modalAmasra5">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="img/amasra_galeri/kuskayasi.jpg" alt="">
+
+                </div>
+                <div class="modal-footer">
+                    <p class="modalP">Amasra, Kuş Kayası Yol Anıtı</p>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Kapat</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modalAmasra6">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="img/amasra_galeri/gergeceselalesi.jpg" alt="">
+
+                </div>
+                <div class="modal-footer">
+                    <p class="modalP">Amasra, Gergece Şelalesi</p>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Kapat</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

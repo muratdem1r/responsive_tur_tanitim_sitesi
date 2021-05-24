@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Kamp Turu</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md justify-content-between">
+
+        <a class="nav-link anasayfa" href="index.html">Anasayfa</a>
+
+        <ul class="navbar-nav">
+
+            <li class="nav-item dropButton">
+                <a id="galeri" class="nav-link" href="#">Galeri
+
+                </a>
+                <div class="sakli">
+                    <a href="bolu.html">Bolu</a>
+                    <a href="amasra.html">Amasra</a>
+                    <a href="kastamonu.html">Kastamonu</a>
+                </div>
+
+
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="taniyalim.html">Tanıyalım</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Rota</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link navKamp" href="kamp_alani.html">Kamp Alanımız</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link navKamp" href="" data-toggle="modal" data-target="#modalFiyat">Fiyat Bilgisi</a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+    <main class="rotaMain">
+
+        <h3 style="text-align: center;">Yolculuk Rotası</h3>
+        <br>
+        <iframe class="harita" src="https://www.google.com/maps/d/u/0/embed?mid=1a_PxCc1407COXQlDt3M_uYpM7VsEBV2T" width="640" height="480"></iframe>
+        <div class="yolculukRotasi">
+            <h3>İstanbul'dan yola çıkıyoruz.</h3>
+            <ul>
+                <li>Bolu'nun karlı dağlarında 1 gece kamp yapıyoruz.</li>
+                <li>Amasra'nın güzelliklerinde kaybolup denizin sefasını sürüyoruz. (Geceyi otobüsle yolculukta geçiriyoruz.)</li>
+                <li>Yeni güne gözümüzü yemyeşil ormanlarda açıyoruz.</li>
+
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <p>Tüm Hakları Saklıdır.</p>
+        <a href="mailto:dzcdemir@gmail.com">dzcdemir@gmail.com</a>
+    </footer>
+
+    <div class="modal" id="modalFiyat">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Fiyat Bilgisi</h4>
+                    <button type="button" class="close" data-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="card-text">Standart Fiyat: <strong style="color: red;">100TL</strong><br>Yemeklere Dahil Olmak İçin: +50TL<br><br>Konaklamak için çadır ve kamp malzemelerinden kişi kendi sorumludur. (Kamp yapmak istemeyip sadece bölgeyi gezmek isteyenler otobüsümüzde konaklayabilir.)</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Kapat</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
